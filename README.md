@@ -1,5 +1,5 @@
 # Frontend
-# First create blank folder name as backend and then clone this code inside that folder
+# First create blank folder name as frontend and then clone this code inside that folder
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
 
