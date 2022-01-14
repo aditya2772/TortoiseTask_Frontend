@@ -1,0 +1,41 @@
+<div class="container mt-5">
+  <!-- success message -->
+  <div *ngIf="successMsg" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>{{successMsg}}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <!-- success message -->
+
+
+  <table class="table table-bordered shadow p-3 mb-5 bg-white rounded">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+
+        <th scope="col"> name</th>
+        <th scope="col">birthdate</th>
+        <th scope="col">status</th>
+
+
+        <th scope="col" colspan="2" style="text-align: center;">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let profile of readData">
+        <th scope="row">{{profile.id}}</th>
+        <td>{{profile.name}}</td>
+        <td>{{profile.birthdate}}</td>
+        <td>{{profile.status}}</td>
+
+        <td>
+          <button [routerLink]="['/create',profile.id]" class="btn btn-info"><i class="far fa-edit"></i></button>
+          &nbsp;
+          <button class="btn btn-danger" (click)="deleteId(profile.id)"><i class="far fa-trash-alt"></i></button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+
