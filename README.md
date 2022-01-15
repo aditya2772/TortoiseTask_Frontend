@@ -1,5 +1,6 @@
 # Frontend
 # First create blank folder name as frontend and then clone this code inside that folder
+#to run the project first hit the command "npm i" in terminal and then hit another command "ng serve" project will run on localhost:4002
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
 
